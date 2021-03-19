@@ -18,10 +18,10 @@
     "minimist": "^1.2.0",
     "pelias-blacklist-stream": "^1.0.0",
     "pelias-config": "^4.12.0",
-    "pelias-dbclient": "^2.13.0",
+    "pelias-dbclient": "../pelias-dbclient",
     "pelias-logger": "^1.2.1",
     "pelias-model": "^7.1.0",
-    "pelias-wof-admin-lookup": "^7.4.1",
+    "pelias-wof-admin-lookup": "../pelias-wof-admin-lookup",
     "split2": "^3.2.2",
     "temp": "^0.9.1",
     "through2": "^3.0.0",
@@ -50,7 +50,8 @@
     "lint": "jshint .",
     "validate": "npm ls",
     "travis": "npm run test && npm run functional",
-    "start": "./bin/start"
+    "start": "./bin/start",
+    "debug": "cd .. && PATH=$PATH:/usr/local/bin PELIAS_CONFIG=./config.england.json node pelias-openaddresses/import.js"
   },
   "repository": {
     "type": "git",
